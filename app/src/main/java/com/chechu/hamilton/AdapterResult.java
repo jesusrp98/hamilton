@@ -47,7 +47,7 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
     private void drawTextViews(ItemMatrixResult matrix, TableLayout tableLayout) {
         for (int i = 0; i < matrix.getRow(); ++i) {
             //create new row to populate
-            final TableRow row = new TableRow(context);
+            final TableRow tableRow = new TableRow(context);
 
             for (int j = 0; j < matrix.getColumn(); ++j) {
                 //format textview
@@ -55,9 +55,9 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
 
                 textView.setText(decimalFormat.format(matrix.getCell(i, j)));
                 textView.setTag(new int[]{i, j});
-                row.addView(textView);
+                tableRow.addView(textView);
             }
-            tableLayout.addView(row, layoutParams);
+            tableLayout.addView(tableRow, layoutParams);
         }
     }
 
