@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Hamilton</string>
+    <string name="app_surname">Matrix calculator</string>
+    <string name="app_version" translatable="false">v%1$s</string>
+
+    <string name="activity_settings">Settings</string>
+    <string name="activity_about">About</string>
+
+    <string name="action_transpose">Transpose matrix</string>
+    <string name="action_save">Save matrix</string>
+    <string name="action_input_matrix">Input matrix&#8230;</string>
+    <string name="action_opposite">Opposite matrix</string>
+    <string name="action_swap">Swap matrices</string>
+    <string name="action_clone">Clone matrix</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_home">Go home&#8230;</string>
+
+    <string name="about_author_head">Created by @jesusrp98</string>
+    <string name="about_author_body">Click here to request features or report some nasty bugs</string>
+    <string name="about_review_head">Enjoying Hamilton?</string>
+    <string name="about_review_body">Click here to leave your experience in the Google Play Store</string>
+    <string name="about_donate_head">Support development</string>
+    <string name="about_donate_body">Click here to send some much needed help via PayPal</string>
+    <string name="about_wikipedia_head">Why Hamilton?</string>
+    <string name="about_wikipedia_body">Click here to learn more about William Rowan Hamilton</string>
+    <string name="about_credits_head">App &amp; credits</string>
+    <string name="about_credits_body">Created in 2017 by Chechu\nUsing JAMA library</string>
+    <string name="about_github_head">This is free software</string>
+    <string name="about_github_body">Source code is available via GitHub\nSupport free software for a better world :)</string>
+
+    <string name="display_matrix_name">Matrix</string>
+    <string name="display_matrix_letter" translatable="false">ABCD</string>
+    <string name="display_hint_number">Enter number&#8230;</string>
+    <string name="display_hint_text">Enter name&#8230;</string>
+    <string name="display_row">Row</string>
+    <string name="display_column">Column</string>
+    <string-array name="display_dimension" translatable="false">
+        <item>@string/display_row</item>
+        <item>@string/display_column</item>
+    </string-array>
+    <string-array name="display_dimension_entry" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="display_button_next">NEXT</string>
+    <string name="display_button_solve">SOLVE</string>
+    <string name="display_select_matrix">Select matrices to continue</string>
+    <string name="display_input_scalar">Enter scalar</string>
+    <string-array name="display_input_sample">
+        <item>Identity matrix</item>
+        <item>Null matrix</item>
+        <item>Random matrix</item>
+    </string-array>
+    <string-array name="display_result_title">
+        <item>INPUT</item>
+        <item>RESULT</item>
+        <item>CONTINUE</item>
+    </string-array>
+    <string name="display_rank">Rank</string>
+    <string name="display_determinant">Determinant</string>
+    <string name="display_trace">Trace</string>
+
+    <string name="placeholder_seekbar" translatable="false">%1$s: %2$d</string>
+    <string name="placeholder_matrix_name" translatable="false">%1$s %2$c</string>
+    <string name="placeholder_matrix_title" translatable="false">%1$s: [%2$d, %3$d]</string>
+    <string name="placeholder_matrix_prop" translatable="false">%1$s: %2$s</string>
+    <string name="placeholder_matrix_dimensions">Default dimension is [%1$d, %2$d]</string>
+    <string name="placeholder_random_range">Random range is [%1$d, %2$d]</string>
+
+    <string name="message_saved_matrix">Matrix saved successfully</string>
+
+    <string name="error_title">An exception has been generated</string>
+    <string name="error_select_matrix">Select just %1$d matrix</string>
+    <string name="error_existing_matrix">Matrix already exists</string>
+
+    <string-array name="operation_title">
+        <item>Basic matrix information</item>
+        <item>System of linear equations</item>
+        <item>Gaussian elimination</item>
+        <item>Matrix inverse</item>
+        <item>Cofactor matrix</item>
+        <item>Adjugate matrix</item>
+        <item>Add matrices</item>
+        <item>Subtract matrices</item>
+        <item>Multiply matrices</item>
+        <item>LU decomposition</item>
+        <item>Scalar product</item>
+        <item>Matrix to the power of a scalar</item>
+        <item>Diagonal matrix</item>
+    </string-array>
+    <string-array name="operation_description">
+        <item>Determinant, rank, trace&#8230;</item>
+        <item>A · X = B</item>
+        <item>Upper triangular matrix</item>
+        <item>A · A&lt;sup&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/sup&gt; = A&lt;sup&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/sup&gt; · A = I</item>
+        <item>cof (A)</item>
+        <item>adj (A)</item>
+        <item>A + B</item>
+        <item>A - B</item>
+        <item>A · B</item>
+        <item>Lower-upper factorization</item>
+        <item>Multiply each element of A by α</item>
+        <item>A&lt;sup&gt;&lt;small&gt;n&lt;/small&gt;&lt;/sup&gt; = A · A · A&#8230;</item>
+        <item>Eigenvalues &amp; eigenvectors</item>
+    </string-array>
+
+    <string name="tutorial_main_head">Welcome to Hamilton!</string>
+    <string name="tutorial_main_body">This is the home page, where all available operations are displayed. There are over 15 available operations. To continue, select one operation listed.</string>
+    <string name="tutorial_matrix_head">Operate with matrices</string>
+    <string name="tutorial_matrix_body">This is the matrix editor, where you can handle matrices. There is a matrix selector tool, with sample and saved matrices. Click Return to enter the value to the matrix cell.</string>
+    <string name="tutorial_result_head">Results shows here</string>
+    <string name="tutorial_result_body">This is where results are displayed. Each matrix view has its basic matrix information attached. You can continue operating with previously used matrices in the Continue tab.</string>
+    <string name="tutorial_about_head">Rate the app!</string>
+    <string name="tutorial_about_body">Here lays all the information about Hamilton and its development. Please consider rate the app and post your opinion, or help by donating via PayPal.</string>
+    <string name="tutorial_settings_head">Customize your experience</string>
+    <string name="tutorial_settings_body">This is the settings panel. Here you can change the default theme, matrices default properties, manage your saved matrices list, or complete reset the app.</string>
+
+    <string name="settings_theme_head">Theme</string>
+    <string name="settings_darkmode_head">Dark mode</string>
+    <string name="settings_darkmode_body">For lovers of the dark side</string>
+    <string name="settings_darkmode_message">You have to restart the app to apply the theme. Are you sure yo want to continue?</string>
+
+    <string name="settings_matrix_head">Matrices</string>
+    <string name="settings_matrix_cell_title">Matrix pointer flow</string>
+    <string name="settings_matrix_cell_body">Changes the next position of the matrix\'s selected cell</string>
+    <string name="settings_matrix_default_body">Default matrix dimensions</string>
+    <string name="settings_matrix_random_body">Random matrix range</string>
+    <string name="settings_matrix_random_error">Unable to apply the changes</string>
+    <string name="settings_matrix_default_message">Value set to default settings</string>
+
+    <string name="settings_restore_head">Restore data</string>
+    <string name="settings_restore_matrix_head">Empty matrices list</string>
+    <string name="settings_restore_matrix_body">Deletes all saved matrices by the user</string>
+    <string name="settings_restore_matrix_warning">All saved matrices are going to be deleted! Are you sure you want to continue?</string>
+    <string name="settings_restore_matrix_message">Matrices list has been successfully empty</string>
+
+    <string name="settings_restore_tutorial_head">Restore welcome messages</string>
+    <string name="settings_restore_tutorial_body">Restores help pop-ups all around the app</string>
+    <string name="settings_restore_tutorial_message">Messages have been restored</string>
+
+    <string name="settings_restore_all_head">Reset all app content</string>
+    <string name="settings_restore_all_body">Restores EVERYTHING changed by the user</string>
+    <string name="settings_restore_all_warning">All app content is going to go away, FOR EVER! Are you sure you want to continue?</string>
+</resources>

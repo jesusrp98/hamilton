@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Hamilton</string>
+    <string name="app_surname">Calculadora de matrices</string>
+
+    <string name="activity_settings">Ajustes</string>
+    <string name="activity_about">Información</string>
+
+    <string name="action_transpose">Matrix traspuesta</string>
+    <string name="action_save">Guardar matriz</string>
+    <string name="action_input_matrix">Introducir matriz&#8230;</string>
+    <string name="action_opposite">Matriz opuesta</string>
+    <string name="action_swap">Intercambiar matrices</string>
+    <string name="action_clone">Clonar matriz</string>
+    <string name="action_reset">Resetear</string>
+    <string name="action_home">Ir al inicio&#8230;</string>
+
+    <string name="about_author_head">Creado por @jesusrp98</string>
+    <string name="about_author_body">Haga click aquí para sugerir nuevas funciones o reportar algún fallo</string>
+    <string name="about_review_head">¿Disfrutando de Hamilton?</string>
+    <string name="about_review_body">Haga click aquí para dejar su reseña en Google Play Store</string>
+    <string name="about_donate_head">Ayude en el desarrollo</string>
+    <string name="about_donate_body">Haga click aquí para ofrecer ayuda a través de PayPal</string>
+    <string name="about_wikipedia_head">¿Por qué Hamilton?</string>
+    <string name="about_wikipedia_body">Haga click aquí para saber más sobre William Rowan Hamilton</string>
+    <string name="about_credits_head">Créditos</string>
+    <string name="about_credits_body">Creado en 2017 por Chechu\nUsando la librería JAMA</string>
+    <string name="about_github_head">Esto es software libre</string>
+    <string name="about_github_body">El código fuente está disponible en GitHub\nAyuda al software libre por una mejor planeta :)</string>
+
+    <string name="display_matrix_name">Matriz</string>
+    <string name="display_hint_number">Introduzca un número&#8230;</string>
+    <string name="display_hint_text">Introduzca un nombre&#8230;</string>
+    <string name="display_row">Fila</string>
+    <string name="display_column">Columna</string>
+    <string name="display_button_next">SIGUIENTE</string>
+    <string name="display_button_solve">CALCULAR</string>
+    <string name="display_select_matrix">Selecciona las matrices para continuar</string>
+    <string name="display_input_scalar">Introduzca un escalar</string>
+    <string-array name="display_input_sample">
+        <item>Matriz identidad</item>
+        <item>Matriz nula</item>
+        <item>Matriz aleatoria</item>
+    </string-array>
+    <string-array name="display_result_title">
+        <item>ENTRADA</item>
+        <item>RESULTADO</item>
+        <item>CONTINUAR</item>
+    </string-array>
+    <string name="display_rank">Rango</string>
+    <string name="display_determinant">Determinante</string>
+    <string name="display_trace">Traza</string>
+
+    <string name="placeholder_matrix_dimensions">Dimensión por defecto [%1$d, %2$d]</string>
+    <string name="placeholder_random_range">Rango aleatorio es [%1$d, %2$d]</string>
+
+    <string name="message_saved_matrix">Matriz guardada correctamente</string>
+
+    <string name="error_title">Un error ha sido generado</string>
+    <string name="error_select_matrix">Selecciona solo %1$d matriz</string>
+    <string name="error_existing_matrix">La matriz ya existe</string>
+
+    <string-array name="operation_title">
+        <item>Información matricial básica</item>
+        <item>Sistema de ecuaciones lineales</item>
+        <item>Eliminación por Gauss</item>
+        <item>Matriz inversa</item>
+        <item>Matriz de cofractores</item>
+        <item>Matriz de adjuntos</item>
+        <item>Sumar matrices</item>
+        <item>Restar matrices</item>
+        <item>Multiplicar matrices</item>
+        <item>Descomposición LU</item>
+        <item>Producto escalar</item>
+        <item>Matriz elevada a un escalar</item>
+        <item>Matriz diagonal</item>
+    </string-array>
+    <string-array name="operation_description">
+        <item>Determinante, rango, traza&#8230;</item>
+        <item>A · X = B</item>
+        <item>Matriz triangular superior</item>
+        <item>A · A&lt;sup&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/sup&gt; = A&lt;sup&gt;&lt;small&gt;-1&lt;/small&gt;&lt;/sup&gt; · A = I</item>
+        <item>cof (A)</item>
+        <item>adj (A)</item>
+        <item>A + B</item>
+        <item>A - B</item>
+        <item>A · B</item>
+        <item>Factorización "lower-upper"</item>
+        <item>Multiplica cada elemento de A por α</item>
+        <item>A&lt;sup&gt;&lt;small&gt;n&lt;/small&gt;&lt;/sup&gt; = A · A · A&#8230;</item>
+        <item>Autovalores y autovectores</item>
+    </string-array>
+
+    <string name="tutorial_main_head">¡Bienvenido a Hamilton!</string>
+    <string name="tutorial_main_body">Esta es la página principal, con todas las operaciones disponibles. Hay más de 15 operaciones realizables. Para continuar, seleccione una operación de la lista.</string>
+    <string name="tutorial_matrix_head">Opera con matrices</string>
+    <string name="tutorial_matrix_body">Este es el editor de matrices, donde usted podrá modificar las matrices. Hay un selector de matrices, con matrices tanto guardadas como de ejemplo. Haga click en Intro para introducir el valor.</string>
+    <string name="tutorial_result_head">Los resultados se muestran aquí</string>
+    <string name="tutorial_result_body">Esta página muestra los resultados de las operaciones. Cada matriz muestra también su información básica. Usted puede continuar operando con estas matrices el la pestaña de Continuar.</string>
+    <string name="tutorial_about_head">Valora la aplicación</string>
+    <string name="tutorial_about_body">Aquí se muestra toda la información sobre Hamilton y su desarrollo. Por favor, considere valorar la aplicación y cuelgue su opinión, o realizar una donación a través de PayPal.</string>
+    <string name="tutorial_settings_head">Personaliza tu experiencia</string>
+    <string name="tutorial_settings_body">Este es el panel de configuración. Aquí podrá cambiar el tema, las propiedades de las matrices por defecto, organizar la lista de matrices guardadas, or resetear la aplicación por completo.</string>
+
+    <string name="settings_theme_head">Tema</string>
+    <string name="settings_darkmode_head">Modo oscuro</string>
+    <string name="settings_darkmode_body">Para los amantes del lado oscuro</string>
+    <string name="settings_darkmode_message">La aplicación se reiniciará para aplicar el tema. ¿Está usted seguro de continuar?</string>
+
+    <string name="settings_matrix_head">Matrices</string>
+    <string name="settings_matrix_cell_title">Movimiento del puntero</string>
+    <string name="settings_matrix_cell_body">Establece la siguiente posición del puntero de edición</string>
+    <string name="settings_matrix_default_body">Dimensiones de matrices por defecto</string>
+    <string name="settings_matrix_random_body">Rango aleatorio de matrices</string>
+    <string name="settings_matrix_random_error">No ha sido posible aplicar los cambios</string>
+    <string name="settings_matrix_default_message">Valor por defecto restablecido</string>
+
+    <string name="settings_restore_head">Borrar datos</string>
+    <string name="settings_restore_matrix_head">Vaciar lista de matrices</string>
+    <string name="settings_restore_matrix_body">Elimina todas las matrices guardadas por el usuario</string>
+    <string name="settings_restore_matrix_warning">Todas las matrices guardadas serán eliminadas. ¿Está usted seguro de continuar?</string>
+    <string name="settings_restore_matrix_message">La lista de matrices vaciada correctamente</string>
+
+    <string name="settings_restore_tutorial_head">Restaura los mensajes de bienvenida</string>
+    <string name="settings_restore_tutorial_body">Reestablece los "pop-ups" de ayuda en la aplicación</string>
+    <string name="settings_restore_tutorial_message">Los mensajes han sido restaurados</string>
+
+    <string name="settings_restore_all_head">Reseto completo</string>
+    <string name="settings_restore_all_body">Elimina TODO modificado por el usuario</string>
+    <string name="settings_restore_all_warning">Toda la configuración de la aplicación se ira, ¡PARA SIEMPRE! ¿Está usted seguro de continuar?</string>
+</resources>

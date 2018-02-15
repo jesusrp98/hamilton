@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- theme category -->
+    <PreferenceCategory
+        android:title="@string/settings_theme_head">
+
+        <SwitchPreference
+            android:key="@string/key_darkmode"
+            android:title="@string/settings_darkmode_head"
+            android:summary="@string/settings_darkmode_body"/>
+
+    </PreferenceCategory>
+
+    <!-- matrices settings category -->
+    <PreferenceCategory
+        android:title="@string/settings_matrix_head">
+
+        <ListPreference
+            android:key="@string/key_cell_flow"
+            android:defaultValue="0"
+            android:title="@string/settings_matrix_cell_title"
+            android:summary="@string/settings_matrix_cell_body"
+            android:entryValues="@array/display_dimension_entry"
+            android:entries="@array/display_dimension"/>
+
+        <Preference
+            android:key="@string/key_default_matrix"
+            android:title="@string/settings_matrix_default_body" />
+
+        <Preference
+            android:key="@string/key_random_range"
+            android:title="@string/settings_matrix_random_body" />
+
+    </PreferenceCategory>
+
+    <!-- data management category -->
+    <PreferenceCategory
+        android:title="@string/settings_restore_head">
+
+        <com.chechu.hamilton.SettingsDialog
+            android:key="@string/key_empty_list"
+            android:title="@string/settings_restore_matrix_head"
+            android:summary="@string/settings_restore_matrix_body"
+            android:dialogMessage="@string/settings_restore_matrix_warning"
+            android:positiveButtonText="@android:string/ok"
+            android:negativeButtonText="@android:string/cancel" />
+
+        <Preference
+            android:key="@string/key_restore_tutorials"
+            android:title="@string/settings_restore_tutorial_head"
+            android:summary="@string/settings_restore_tutorial_body" />
+
+        <com.chechu.hamilton.SettingsDialog
+            android:key="@string/key_restore_all"
+            android:title="@string/settings_restore_all_head"
+            android:summary="@string/settings_restore_all_body"
+            android:dialogMessage="@string/settings_restore_all_warning"
+            android:positiveButtonText="@android:string/ok"
+            android:negativeButtonText="@android:string/cancel" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

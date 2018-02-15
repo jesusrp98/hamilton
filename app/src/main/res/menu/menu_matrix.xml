@@ -1,0 +1,44 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jesus.project.hamilton.MainActivity">
+
+    <item
+        android:id="@+id/action_transpose"
+        android:icon="@drawable/ic_traspose"
+        android:title="@string/action_transpose"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_save"
+        android:title="@string/action_save"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sample"
+        android:title="@string/action_input_matrix"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_clone"
+        android:title="@string/action_clone"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_swap"
+        android:title="@string/action_swap"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_opposite"
+        android:title="@string/action_opposite"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_reset"
+        android:title="@string/action_reset"
+        app:showAsAction="never"/>
+
+</menu>

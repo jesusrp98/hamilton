@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="operation_icon" translatable="false">
+        <item>Ba</item>
+        <item>Eq</item>
+        <item>Ga</item>
+        <item>-1</item>
+        <item>Co</item>
+        <item>Ad</item>
+        <item>+</item>
+        <item>-</item>
+        <item>•</item>
+        <item>LU</item>
+        <item>α</item>
+        <item>^</item>
+        <item>Di</item>
+    </string-array>
+
+    <string-array name="operation_number" translatable="false">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+
+    <integer-array name="range_default">
+        <item>1</item>
+        <item>5</item>
+    </integer-array>
+
+    <integer-array name="range_random">
+        <item>-99</item>
+        <item>99</item>
+    </integer-array>
+
+    <integer-array name="dimension_default">
+        <item>3</item>
+        <item>3</item>
+    </integer-array>
+
+    <integer-array name="dimension_random">
+        <item>0</item>
+        <item>9</item>
+    </integer-array>
+</resources>

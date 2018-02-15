@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chechu.hamilton.MatrixActivity"
+    tools:showIn="@layout/activity_matrix">
+
+    <!-- viewpager where matrix are stored -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/matrix_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/matrix_bottom_panel"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/matrix_circleindicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/circleindicator_size"
+        android:layout_above="@+id/matrix_bottom_panel"
+        app:ci_drawable="@drawable/matrix_circle_indicator" />
+
+    <!-- bottom layout -->
+    <LinearLayout
+        android:id="@+id/matrix_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/matrixPanel"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!-- seekbars -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <!-- row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/matrix_textview_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/super_reduced_item_margin"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+                <SeekBar
+                    android:id="@+id/matrix_seekbar_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/super_reduced_item_margin"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:max="@integer/max_dim"/>
+
+            </LinearLayout>
+
+            <!-- columns -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/matrix_textview_column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/super_reduced_item_margin"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+                <SeekBar
+                    android:id="@+id/matrix_seekbar_column"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/super_reduced_item_margin"
+                    style="@android:style/Widget.Material.SeekBar"
+                    android:max="@integer/max_dim"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- data input zone -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/matrix_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/reduced_item_margin"
+                android:layout_marginEnd="@dimen/reduced_item_margin"
+                android:layout_alignBaseline="@+id/matrix_button"
+                android:layout_toStartOf="@+id/matrix_button"
+                android:layout_alignParentStart="true"
+                android:inputType="numberSigned|numberDecimal"
+                android:hint="@string/display_hint_number"/>
+
+            <Button
+                android:id="@+id/matrix_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/reduced_item_margin"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="?android:attr/colorAccent"
+                android:textColor="?android:textColorPrimaryInverse"
+                android:text="@string/display_button_solve" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

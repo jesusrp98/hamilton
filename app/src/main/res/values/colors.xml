@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appColor">@color/colorPrimary</color>
+
+    <!-- general colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF9100</color>
+    <color name="colorAccentDark">#FF6D00</color>
+
+    <color name="colorPrimaryInverse">@android:color/black</color>
+    <color name="colorPrimaryDarkInverse">@android:color/black</color>
+    <color name="colorAccentInverse">@android:color/white</color>
+    <color name="colorAccentDarkInverse">#BDBDBD</color>
+
+    <!-- matrix colors -->
+    <color name="cellBorder">#E0E0E0</color>
+    <color name="cellBackground">#F5F5F5</color>
+    <color name="matrixPanel">#F5F5F5</color>
+    <color name="textColorMatrix">#89000000</color>
+
+    <color name="cellBorderInverse">#757575</color>
+    <color name="cellBackgroundInverse">#616161</color>
+    <color name="matrixPanelInverse">#212121</color>
+    <color name="textColorMatrixInverse">#89000000</color>
+
+    <!-- general theme attributes -->
+    <attr name="cellBorder" format="color"/>
+    <attr name="cellBackground" format="color"/>
+    <attr name="matrixPanel" format="color"/>
+    <attr name="toolbarMenuStyle" format="reference"/>
+    <attr name="vectorImageColor" format="color"/>
+    <attr name="textColorMatrix" format="color"/>
+    <attr name="colorAccentDark" format="color"/>
+    <attr name="vectorImageColorInverse" format="color"/>
+</resources>

@@ -1,0 +1,54 @@
+<resources>
+    <!-- light theme -->
+    <style name="ThemeLight" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccentDark">@color/colorAccentDark</item>
+        <item name="cellBorder">@color/cellBorder</item>
+        <item name="cellBackground">@color/cellBackground</item>
+        <item name="matrixPanel">@color/matrixPanel</item>
+        <item name="toolbarMenuStyle">@style/AppTheme.PopupOverlay</item>
+        <item name="vectorImageColor">@android:color/black</item>
+        <item name="vectorImageColorInverse">@android:color/white</item>
+        <item name="textColorMatrix">@color/textColorMatrix</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- dark theme -->
+    <style name="ThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimaryInverse</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkInverse</item>
+        <item name="colorAccent">@color/colorAccentInverse</item>
+        <item name="colorAccentDark">@color/colorAccentDarkInverse</item>
+        <item name="cellBorder">@color/cellBorderInverse</item>
+        <item name="cellBackground">@color/cellBackgroundInverse</item>
+        <item name="matrixPanel">@color/matrixPanelInverse</item>
+        <item name="toolbarMenuStyle">@style/AppTheme.Dark.PopupOverlay</item>
+        <item name="vectorImageColor">@android:color/white</item>
+        <item name="vectorImageColorInverse">@android:color/black</item>
+        <item name="textColorMatrix">@color/textColorMatrixInverse</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat" />
+
+    <!-- pop-up theme -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--splash-art theme -->
+    <style name="SplashTheme" parent="ThemeLight">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <!-- generic cardview them -->
+    <style name="CardStyle" parent="@style/CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/reduced_item_margin</item>
+        <item name="android:layout_marginEnd">@dimen/reduced_item_margin</item>
+    </style>
+</resources>

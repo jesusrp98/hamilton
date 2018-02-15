@@ -1,0 +1,14 @@
+<resources>
+    <dimen name= "item_margin">16dp</dimen>
+    <dimen name="reduced_item_margin">8dp</dimen>
+    <dimen name="super_reduced_item_margin">4dp</dimen>
+
+    <dimen name= "matrix_textview_size">21sp</dimen>
+    <dimen name= "circleindicator_size">24dp</dimen>
+
+    <dimen name= "about_icon_size">64dp</dimen>
+    <dimen name= "exception_icon_size">128dp</dimen>
+    <dimen name= "operation_icon_size">40dp</dimen>
+
+    <integer name="max_dim">4</integer>
+</resources>

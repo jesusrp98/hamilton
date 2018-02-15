@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.chechu.hamilton.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        android:divider="?android:listDivider"
+        android:showDividers="middle|end">
+
+        <!-- about app -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_name"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_surname"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/versionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- about author -->
+        <RelativeLayout
+            android:id="@+id/authorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="aboutButtonClickListener"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_person"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_author_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_author_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- opinion -->
+        <RelativeLayout
+            android:id="@+id/opinionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="aboutButtonClickListener"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_star"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_review_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_review_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- support app -->
+        <RelativeLayout
+            android:id="@+id/donationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="aboutButtonClickListener"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_like"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_donate_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_donate_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- about w. r. hamilton -->
+        <RelativeLayout
+            android:id="@+id/wikipediaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="aboutButtonClickListener"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_info"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_wikipedia_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_wikipedia_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- github software -->
+        <RelativeLayout
+            android:id="@+id/githubView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="aboutButtonClickListener"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_people"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_github_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_github_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- about library -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/item_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/about_icon_size"
+                android:layout_height="@dimen/about_icon_size"
+                app:srcCompat="@drawable/ic_folder"
+                android:tint="?attr/vectorImageColor"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_credits_head"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_credits_body"
+                    android:textSize="16sp"
+                    android:textColor="?android:attr/textColorSecondary"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

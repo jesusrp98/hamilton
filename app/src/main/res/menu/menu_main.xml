@@ -1,0 +1,24 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jesus.project.hamilton.MainActivity">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/activity_settings"
+        app:showAsAction="never"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/activity_about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+
+</menu>
