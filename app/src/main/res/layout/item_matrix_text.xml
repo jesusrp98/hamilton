@@ -9,5 +9,4 @@
     android:textStyle="normal"
     android:background="@drawable/matrix_cell"
     android:padding="12dp"
-    android:gravity="center"
-    android:onClick="MatrixTextClickListener"/>
+    android:gravity="center" />

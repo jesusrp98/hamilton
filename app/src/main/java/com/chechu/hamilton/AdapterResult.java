@@ -54,7 +54,6 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
                 final TextView textView = (TextView) View.inflate(context, R.layout.item_matrix_text, null);
 
                 textView.setText(decimalFormat.format(matrix.getCell(i, j)));
-                textView.setTag(new int[]{i, j});
                 tableRow.addView(textView);
             }
             tableLayout.addView(tableRow, layoutParams);
