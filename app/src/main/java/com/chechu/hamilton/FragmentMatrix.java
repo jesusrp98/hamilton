@@ -104,6 +104,7 @@ public class FragmentMatrix extends Fragment {
     public void setCell(double number) {
         int[] pointer = getPointer();
 
+        //set cell & updates textview background
         matrix.getMatrix().set(pointer[0], pointer[1], number);
         textViews[pointer[0]][pointer[1]].setText(String.valueOf(decimalFormat.format(number)));
     }

@@ -48,7 +48,7 @@ public class MatrixActivity extends AppCompatActivity {
         setTheme();
         setContentView(R.layout.activity_matrix);
 
-        Bundle bundle = getIntent().getExtras();
+        final Bundle bundle = getIntent().getExtras();
         itemOperation = bundle.getParcelable("itemOperation");
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
@@ -70,7 +70,7 @@ public class MatrixActivity extends AppCompatActivity {
 
         initViewPager(bundle.<ItemMatrix>getParcelableArrayList("bundleMatrix"));
 
-        SeekBar.OnSeekBarChangeListener onSeekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
+        final SeekBar.OnSeekBarChangeListener onSeekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
                 switch (seekBar.getId()) {
@@ -324,6 +324,7 @@ public class MatrixActivity extends AppCompatActivity {
 
         if (!string.equals("")) {
             if (!stringList.contains(string)) {
+                //finally saves matrix to storage
                 SharedPreferences.Editor editor = preferences.edit();
                 stringList.add(string);
                 getFragment().setMatrixName(string);

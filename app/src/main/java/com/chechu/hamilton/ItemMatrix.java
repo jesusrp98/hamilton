@@ -156,18 +156,17 @@ public class ItemMatrix implements Parcelable {
         final Matrix aux = new Matrix(getRow(), getColumn());
         int k = 0;
 
-        for (int i = 0; i < getRow(); ++i){
-            for (int j = 0; j < getColumn(); ++j) {
+        for (int i = 0; i < getRow(); ++i)
+            for (int j = 0; j < getColumn(); ++j, ++k)
                 aux.set(i, j, (k % 2 == 0 ? 1 : -1) * new Matrix(minor(matrix.getArray(), i, j)).det());
-                ++k;
-            }
-        }
+
         return aux;
     }
 
     private static double[][] minor(double[][] matrix, int row, int column) {
         final double[][] minor = new double[matrix.length - 1][matrix.length - 1];
 
+        //aux function for cofactor function
         for (int i = 0; i < matrix.length; i++)
             for (int j = 0; i != row && j < matrix[i].length; j++)
                 if (j != column)

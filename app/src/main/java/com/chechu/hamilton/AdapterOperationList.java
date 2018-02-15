@@ -46,6 +46,7 @@ public class AdapterOperationList extends ArrayAdapter<ItemOperation> implements
             convertView = LayoutInflater.from(context).inflate(R.layout.item_operation, parent, false);
             viewHolder = new ViewHolder();
 
+            //get item id
             viewHolder.iconView = convertView.findViewById(R.id.item_operation_icon);
             viewHolder.titleView = convertView.findViewById(R.id.item_operation_title);
             viewHolder.descriptionView = convertView.findViewById(R.id.item_operation_description);

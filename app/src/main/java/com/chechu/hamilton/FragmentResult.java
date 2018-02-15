@@ -34,6 +34,7 @@ public class FragmentResult extends Fragment {
 
             recyclerView.setAdapter(new AdapterResult(listItems, getActivity()));
         } else {
+            //if operation returns exception draws a different layout
             view = inflater.inflate(R.layout.fragment_exception, container, false);
             ((TextView) view.findViewById(R.id.exceptionTextView)).setText(exception);
         }

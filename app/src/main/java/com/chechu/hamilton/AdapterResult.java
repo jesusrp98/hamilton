@@ -37,6 +37,7 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
     public void onBindViewHolder(ViewHolder holder, int position) {
         final ItemMatrixResult item = itemResultList.get(position);
 
+        //set data to result item
         holder.title.setText(String.format(titleFormat, item.getName(), item.getRow(), item.getColumn()));
         drawTextViews(item, holder.layout);
         holder.determinant.setText(String.format(valueFormat, context.getString(R.string.display_determinant), decimalFormat.format(item.getDeterminant())));
@@ -74,6 +75,7 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
 
         private ViewHolder(View itemView) {
             super(itemView);
+            //get item id for cache
             title = itemView.findViewById(R.id.matrix_result_title);
             layout = itemView.findViewById(R.id.matrix_result_layout);
             determinant = itemView.findViewById(R.id.matrix_result_det);

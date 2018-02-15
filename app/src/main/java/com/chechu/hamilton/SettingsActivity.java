@@ -33,6 +33,7 @@ public class SettingsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+        //builds settings fragment
         getFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
     }
 
@@ -75,6 +76,7 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.layout_settings);
 
+            //gets dimension & range arrays
             final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
             final int[] dimensionDefault = new Gson().fromJson(sharedPreferences.getString(getString(R.string.key_default_matrix_dimension), null), int[].class);
             final int[] dimensionRandom = new Gson().fromJson(sharedPreferences.getString(getString(R.string.key_random_range_dimension), null), int[].class);
@@ -114,6 +116,7 @@ public class SettingsActivity extends AppCompatActivity {
                     final int[] range = getResources().getIntArray(isDialogDefault ? R.array.range_default : R.array.range_random);
                     final int[] dimension  = isDialogDefault ? dimensionDefault : dimensionRandom;
 
+                    //init number picker
                     rowNumberPicker.setMinValue(range[0]);
                     rowNumberPicker.setMaxValue(range[1]);
                     rowNumberPicker.setValue(dimension[0]);
@@ -162,6 +165,7 @@ public class SettingsActivity extends AppCompatActivity {
             defaultPreference.setOnPreferenceClickListener(onPreferenceClickListener);
             randomPreference.setOnPreferenceClickListener(onPreferenceClickListener);
 
+            //dark mode switch
             darkModePreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 @Override
                 public boolean onPreferenceChange(final Preference preference, final Object o) {
