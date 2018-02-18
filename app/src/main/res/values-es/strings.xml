@@ -107,6 +107,8 @@
     <string name="settings_darkmode_message">La aplicación se reiniciará para aplicar el tema. ¿Está usted seguro de continuar?</string>
 
     <string name="settings_matrix_head">Matrices</string>
+    <string name="settings_matrix_nextpage_title">Evita continuar con la operación</string>
+    <string name="settings_matrix_nextpage_body">Cambia el comportamiento de la tecla Enter en la pantalla de edición</string>
     <string name="settings_matrix_cell_title">Movimiento del puntero</string>
     <string name="settings_matrix_cell_body">Establece la siguiente posición del puntero de edición</string>
     <string name="settings_matrix_default_body">Dimensiones de matrices por defecto</string>

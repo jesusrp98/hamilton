@@ -6,3 +6,4 @@
 /.idea
 gradle.properties
 /app/.gitignore
+/app/build

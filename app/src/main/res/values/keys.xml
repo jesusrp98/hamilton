@@ -4,6 +4,7 @@
 
     <string name="key_darkmode" translatable="false">key_darkmode</string>
     <string name="key_cell_flow" translatable="false">key_cell_flow</string>
+    <string name="key_avoid_nextpage" translatable="false">key_avoid_nextpage</string>
     <string name="key_default_matrix" translatable="false">key_default_matrix</string>
     <string name="key_random_range" translatable="false">key_random_range</string>
     <string name="key_empty_list" translatable="false">key_empty_list</string>

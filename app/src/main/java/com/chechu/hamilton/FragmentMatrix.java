@@ -1,5 +1,6 @@
 package com.chechu.hamilton;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
@@ -67,13 +68,14 @@ public class FragmentMatrix extends Fragment {
     }
 
     public boolean stepPointer() {
+        final SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         int counterMode;
         int[] pointer;
         int mode;
 
         //move pointer one unit if allowed
         if (!matrix.isFinalCell()) {
-            mode = Integer.parseInt(PreferenceManager.getDefaultSharedPreferences(getContext()).getString(getString(R.string.key_cell_flow), "0"));
+            mode = Integer.parseInt(sharedPreferences.getString(getString(R.string.key_cell_flow), "0"));
             pointer = getPointer();
             counterMode = (mode == 0) ? 1 : 0;
 
@@ -81,9 +83,13 @@ public class FragmentMatrix extends Fragment {
                 setPointer(new int[]{pointer[0] + mode, pointer[1] + counterMode});
             else
                 setPointer(new int[]{(pointer[0] + 1) * counterMode, (pointer[1] + 1) * mode});
-            return true;
+        } else {
+            if (sharedPreferences.getBoolean(getString(R.string.key_avoid_nextpage), false))
+                setPointer(new int[]{0, 0});
+            else
+                return false;
         }
-        return false;
+        return true;
     }
 
     private void updatePointer() {

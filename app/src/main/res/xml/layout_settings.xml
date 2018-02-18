@@ -17,6 +17,11 @@
     <PreferenceCategory
         android:title="@string/settings_matrix_head">
 
+        <SwitchPreference
+            android:key="@string/key_avoid_nextpage"
+            android:title="@string/settings_matrix_nextpage_title"
+            android:summary="@string/settings_matrix_nextpage_body"/>
+
         <ListPreference
             android:key="@string/key_cell_flow"
             android:defaultValue="0"

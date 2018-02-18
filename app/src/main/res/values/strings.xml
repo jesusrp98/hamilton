@@ -121,6 +121,8 @@
     <string name="settings_darkmode_message">You have to restart the app to apply the theme. Are you sure yo want to continue?</string>
 
     <string name="settings_matrix_head">Matrices</string>
+    <string name="settings_matrix_nextpage_title">Avoid continuing with operation</string>
+    <string name="settings_matrix_nextpage_body">Changes behaviour of Return key in edit screen</string>
     <string name="settings_matrix_cell_title">Matrix pointer flow</string>
     <string name="settings_matrix_cell_body">Changes the next position of the matrix\'s selected cell</string>
     <string name="settings_matrix_default_body">Default matrix dimensions</string>
