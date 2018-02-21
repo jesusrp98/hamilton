@@ -17,15 +17,15 @@ $ git clone
 Then download Android Studio from the [official website](https://developer.android.com/studio/index.html). Then unzip it and run the studio.sh in the bin folder:
 
 ```
-./studio.sh
+$ ./studio.sh
 ```
 
 Finally, when asked to open new project, select the project folder. Happy coding :)
 
 ## Built With
 
-* [Android Studio](https://developer.android.com/studio/index.html/) - The web framework used
-* [JAMA](https://math.nist.gov/javanumerics/jama/) - Java matrix package
+* [Android Studio](https://developer.android.com/studio/index.html/) - Framework used.
+* [JAMA](https://math.nist.gov/javanumerics/jama/) - Matrix package for Java.
 
 ## Useful UI elements
 
