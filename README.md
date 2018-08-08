@@ -29,25 +29,20 @@ $ ./studio.sh
 Select the project folder to open the project in Android Studio.
 
 ## Built with
-
 * [Android Studio](https://developer.android.com/studio/index.html/) - Android SDK & phone emulation.
 * [JAMA](https://math.nist.gov/javanumerics/jama/) - Matrix package for Java.
 
 ## Useful UI elements
-
 * [NumberPicker](https://github.com/ShawnLin013/NumberPicker/) - Number picker used in settigns panel.
 * [CircleIndicator](https://github.com/ongakuer/CircleIndicator/) - Circle indicator used in matrix editor.
 * [TextDrawable](https://github.com/amulyakhare/TextDrawable/) - Text drawable used in operation list.
 
 ## Authors
-
 * **Jesús Rodríguez** - aka Chechu - [GitHub](https://github.com/jesusrp98), [Twitter](https://twitter.com/jesusrp98).
 
 ## License
-
 This project is licensed under the GNU GPL v2 License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Postdata
-
 * [Why Hamilton?](https://en.wikipedia.org/wiki/William_Rowan_Hamilton)
 * Built just for fun.
