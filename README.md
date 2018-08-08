@@ -2,6 +2,21 @@
 
 Open-source free matrix calculator app built with Android Studio, available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.chechu.hamilton).
 
+### About the project
+WIP
+
+## Features
+* **Basic matrix data**: Determinant, rank and trace.
+* **Resolve systems of equations**: A·B = X.
+* **Gaussian elimination**: Calculate upper triangular matrix.
+* **Inverse matrix**: A-1·A = A·A-1 = 1.
+* **Matrix of adjuncts and cofactors**.
+* **Add, subtract and multiply matrices**: A+B, A-B, A·B.
+* **LU decomposition**.
+* **Scalar multiplication**.
+* **Power of a matrix**: An.
+* **Matrix diagonalization**: Calculate eigenvalues & eigenvectors.
+
 ## Download & install
 
 First, clone the repository with the 'clone' command, or just download the zip.
