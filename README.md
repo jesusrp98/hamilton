@@ -1,20 +1,16 @@
 # Hamilton: Matrix Calculator
 
-Open source free matrix calculator app built with Android Studio, available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.chechu.hamilton).
+Open-source free matrix calculator app built with Android Studio, available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.chechu.hamilton).
 
-## Getting Started
+## Download & install
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Installing
-
-Clone the repository with the clone command:
+First, clone the repository with the 'clone' command, or just download the zip.
 
 ```
-$ git clone
+$ git clone git@github.com:jesusrp98/hamilton.git
 ```
 
-Then download Android Studio from the [official website](https://developer.android.com/studio/index.html). Then unzip it and run the studio.sh in the bin folder:
+Then, download Android Studio from the [official website](https://developer.android.com/studio/index.html). Unzip it and run the studio.sh in the 'bin' folder, in order to install it:
 
 ```
 $ ./studio.sh
@@ -24,7 +20,7 @@ Finally, when asked to open new project, select the project folder. Happy coding
 
 ## Built With
 
-* [Android Studio](https://developer.android.com/studio/index.html/) - Framework used.
+* [Android Studio](https://developer.android.com/studio/index.html/) - Android SDK & phone emulation.
 * [JAMA](https://math.nist.gov/javanumerics/jama/) - Matrix package for Java.
 
 ## Useful UI elements
@@ -43,5 +39,5 @@ This project is licensed under the GNU GPL v2 License - see the [LICENSE.md](LIC
 
 ## Acknowledgments
 
+* [Why Hamilton?](https://en.wikipedia.org/wiki/William_Rowan_Hamilton)
 * Built just for fun.
-
